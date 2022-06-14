@@ -1,0 +1,23 @@
+############################### CLI basic commands ###############################################
+#######  Set up IAM user ################
+#######  Set permissions & Attach Policies
+
+# apt update
+# apt install awscli -y
+
+#aws configure
+
+######################### Create a key pair #######################################
+
+
+# aws ec2 create-key-pair --key-name <keypair-Name> --query 'KeyMaterial' --output
+text > <keypair-Name.pem>
+
+#################### Delete a key pair ##########################
+# aws ec2 delete-key-pair --key-name <keypair-Name>
+
+
+# aws ec2 describe-security-groups --group-names <security grp Name>
+
+Delete your security group
+# aws ec2 delete-security-group --group-name <security grp Name>
